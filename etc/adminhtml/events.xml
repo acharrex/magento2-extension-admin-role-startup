@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Shopigo. All rights reserved.
+ * See LICENSE.txt for license details (http://opensource.org/licenses/osl-3.0.php).
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="admin_permissions_role_prepare_save">
+        <observer name="shopigo_adminrolestartup_set_startup_page" instance="Shopigo\AdminRoleStartup\Observer\SetStartupPageObserver"/>
+    </event>
+</config>
